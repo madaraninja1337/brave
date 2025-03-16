@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>.seeeeereeee</title>
+    <link>https://example.com</link>
+    <description>.</description>
+
+    <item>
+      <title>fodase</title>
+      <link>mailto:admin@example.com?subject=Oferta%20Exclusiva&body=Confira%20esta%20notícia:%20http://malicious-site.com</link>
+      <description>aa</description>
+    </item>
+  </channel>
+</rss>
