@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>fudido</title>
+    <link>file:///etc/passwd</link>
+    <description>feed</description>
+    <item>
+      <title>Notícia</title>
+      <link>file:///etc/passwd%00.txt</link>
+      <description>viadagem</description>
+      <guid>abc123</guid>
+    </item>
+  </channel>
+</rss>
