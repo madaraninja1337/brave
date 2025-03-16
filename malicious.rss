@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Testes de Vulnerabilidade no Brave</title>
+    <link>https://example.com</link>
+    <description>Feed RSS para testar protocolos e comportamentos no Brave.</description>
+    <language>pt-br</language>
+    <pubDate>Sun, 16 Mar 2025 11:23:00 -0700</pubDate>
+
+    <!-- Teste 1: Protocolo file:// (acesso a arquivos locais) -->
+    <item>
+      <title>Teste 1: Acesso a Arquivo Local (file://)</title>
+      <link>file:///etc/passwd</link>
+      <description>Tenta acessar um arquivo local no sistema (ex.: /etc/passwd em sistemas Unix-like).</description>
+      <guid>test-1-file-access</guid>
+      <pubDate>Sun, 16 Mar 2025 11:00:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 2: Protocolo chrome:// (interface interna do navegador) -->
+    <item>
+      <title>Teste 2: Acesso a Configurações Internas (chrome://)</title>
+      <link>chrome://settings</link>
+      <description>Tenta acessar uma página interna do Chromium/Brave.</description>
+      <guid>test-2-chrome-settings</guid>
+      <pubDate>Sun, 16 Mar 2025 11:05:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 3: Protocolo about: (páginas especiais do navegador) -->
+    <item>
+      <title>Teste 3: Página Especial (about:)</title>
+      <link>about:config</link>
+      <description>Tenta abrir uma página de configuração especial (comum em Firefox, mas não em Brave).</description>
+      <guid>test-3-about-config</guid>
+      <pubDate>Sun, 16 Mar 2025 11:10:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 4: Acesso a localhost em porta específica -->
+    <item>
+      <title>Teste 4: Acesso a Localhost (porta 8080)</title>
+      <link>http://localhost:8080</link>
+      <description>Tenta conectar ao localhost em uma porta comum de serviços web.</description>
+      <guid>test-4-localhost-8080</guid>
+      <pubDate>Sun, 16 Mar 2025 11:15:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 5: Protocolo FTP -->
+    <item>
+      <title>Teste 5: Acesso FTP</title>
+      <link>ftp://ftp.example.com</link>
+      <description>Testa o suporte a protocolo FTP no Brave.</description>
+      <guid>test-5-ftp</guid>
+      <pubDate>Sun, 16 Mar 2025 11:20:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 6: Redirecionamento aberto (open redirect simulado) -->
+    <item>
+      <title>Teste 6: Redirecionamento Aberto</title>
+      <link>https://example.com/redirect?url=http://malicious.com</link>
+      <description>Simula um redirecionamento aberto para um domínio potencialmente malicioso.</description>
+      <guid>test-6-open-redirect</guid>
+      <pubDate>Sun, 16 Mar 2025 11:25:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 7: Protocolo ws:// (WebSocket) -->
+    <item>
+      <title>Teste 7: WebSocket (ws://)</title>
+      <link>ws://echo.websocket.org</link>
+      <description>Testa o suporte a conexões WebSocket no Brave.</description>
+      <guid>test-7-websocket</guid>
+      <pubDate>Sun, 16 Mar 2025 11:30:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 8: Acesso a IP interno (rede local) -->
+    <item>
+      <title>Teste 8: Acesso a IP Interno (192.168.1.1)</title>
+      <link>http://192.168.1.1</link>
+      <description>Tenta acessar um IP típico de roteadores em redes locais.</description>
+      <guid>test-8-internal-ip</guid>
+      <pubDate>Sun, 16 Mar 2025 11:35:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 9: Protocolo data: (dados embutidos) -->
+    <item>
+      <title>Teste 9: Dados Embutidos (data:)</title>
+      <link>data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0PjwvaHRtbD4=</link>
+      <description>Usa data: para embutir HTML com JS (base64 decodifica para <html><script>alert(1)</script></html>).</description>
+      <guid>test-9-data-uri</guid>
+      <pubDate>Sun, 16 Mar 2025 11:40:00 -0700</pubDate>
+    </item>
+
+    <!-- Teste 10: Tentativa de port scanning básico -->
+    <item>
+      <title>Teste 10: Port Scanning (porta 22)</title>
+      <link>http://127.0.0.1:22</link>
+      <description>Tenta acessar uma porta comum de SSH no localhost.</description>
+      <guid>test-10-port-scan</guid>
+      <pubDate>Sun, 16 Mar 2025 11:45:00 -0700</pubDate>
+    </item>
+  </channel>
+</rss>
