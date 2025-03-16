@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>teste</title>
+    <link>javascript:alert(1)</link>
+    <description>feed fudido</description>
+
+    <item>
+      <title>noticia fudida</title>
+      <link>javascript:alert(1)</link>
+      <description>coisa fudida aqui clica ae</description>
+      <guid>1</guid>
+    </item>
+  </channel>
+</rss>
