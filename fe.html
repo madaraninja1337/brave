@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brave</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+            .then(function(reg) {
+                console.log("[+]");
+            });
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
