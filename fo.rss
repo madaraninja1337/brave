@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns="http://www.nu2bi.ws/">
+  <channel>
+    <title>aaaaaa</title>
+    <link>https://hax.lat</link>
+    <description>maliciosa</description>
+    <item>
+      <title>Exploit</title>
+      <content><![CDATA[
+        <script type="text/javascript">
+          document.write("Sua informação foi comprometida pelo RSS malicioso!");
+        </script>
+      ]]></content>
+    </item>
+  </channel>
+</rss>
